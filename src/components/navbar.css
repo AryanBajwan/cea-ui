@@ -8,12 +8,10 @@ nav {
 .navigation {
     width: auto;
     height: 100%;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:space-between;
-
     margin: 0 2rem 0 2rem;
 }
 
@@ -23,8 +21,65 @@ nav {
     cursor: pointer;
 }
 
-.navigation .nav-menu {
+.navigation .nav-menu img{
     width: 60px;
     height: auto;
     cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+
+.navigation .nav-menu .menu-list {
+    width: 400px;
+    position: fixed;
+    top: 100%;
+    right: 0;
+    height: auto;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0.3s;
+    transform: translateX(100%);
+    z-index: 999;
+}
+
+.navigation .nav-menu .menu-list.active {
+    width: 400px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: auto;
+    background-color: black;
+    transform: translateX(0); 
+    opacity: 1;
+    visibility: visible; 
+    pointer-events: auto;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0s;
+
+}
+.navigation .nav-menu .menu-list li {
+    line-height: 56px;
+    list-style: none;
+}
+
+.navigation .nav-menu .menu-list li a {
+    color: white;
+    font-size: 20px;
+}
+.navigation .nav-menu .menu-list .active li a:hover{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 640px) {
+    .navigation .nav-logo img{
+        width: 70px;}
+    .navigation .nav-menu img{
+        width: 50px;
+    }
+    .navigation .nav-menu .menu-list.active {
+        width: 320px;
+    }
+
 }
