@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div id='main-window'><Outlet /></div>
+      {/* <div id='main-window'><Outlet /></div> */}
       {/* <Footer /> */}
     </>
   )
