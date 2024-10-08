@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "photo": "/public/n.jpg",
+        "photo": "/assets/n.jpg",
         "desc": "The stock market reached an all-time high today amid rising consumer confidence. The stock market reached an all-time high today amid rising consumer confidence. The stock market reached an all-time high today amid rising consumer confidence."
     },
     {
         "id": 2,
-        "photo": "/public/n.jpg",
+        "photo": "/assets/n.jpg",
         "desc": "The stock market reached an all-time high today amid rising consumer confidence. The stock market reached an all-time high today amid rising consumer confidence. The stock market reached an all-time high today amid rising consumer confidence."
     }
 ]
