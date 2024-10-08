@@ -5,10 +5,13 @@
     --color-light-red: #FE8E81;
     --color-light-blue: #637FAA;
     --color-news-btn: #2ECC71;
+
+    --color-font: #ffffff;
 }
 
 .app.light {
     --color-background: #c0d9e0;
+    --color-font: #000000;
 }
 
 body {
@@ -21,6 +24,7 @@ body {
     transition: background-color 0.3s ease;
 
     min-height: 100vh;
+    overflow: hidden;
 }
 
 * {

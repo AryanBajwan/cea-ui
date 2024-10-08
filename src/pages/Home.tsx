@@ -1,4 +1,6 @@
+import React from 'react';
 import heroImg from '../assets/hero.png'
+import newsData from "./news.json"
 
 import './home.css'
 
@@ -29,8 +31,36 @@ const HeroSection = () => {
 
 const NewsSection = () => {
     return (
-        <div>
-            <h1>News Section</h1>
+        <div className="news">
+            <div className="title">
+                <h1>news</h1>
+            </div>
+            <div className='news-s'>
+                <News />
+            </div>
+        </div>
+    );
+}
+
+interface NewsAtomic {
+    id: number;
+    photo: string;
+    desc: string;
+}
+
+const News = () => {
+    return (
+        <div className='news-atomic'>
+            {newsData.length > 0 && <div className='line'></div>}
+            {newsData && newsData.map((news: NewsAtomic) => (
+                <React.Fragment key={news.id}>
+                    <div className='news-article'>
+                        <img src={news.photo} alt={news.desc} />
+                        <p>{news.desc}</p>
+                    </div>
+                    <div className='line'></div>
+                </React.Fragment>
+            ))}
         </div>
     );
 }

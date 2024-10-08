@@ -1,9 +1,10 @@
-.hero {
+.hero, .news {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1.5rem;
+    /* padding-bottom: 1.5rem; */
+    margin-top: 120px;
 }
 
 .hero .title {
@@ -38,6 +39,63 @@
     object-fit: cover;
 }
 
+
+/* 
+    News Section
+*/
+
+.news {
+    width: 100%;
+    margin: 0 !important;
+    padding-bottom: 1rem;
+}
+
+.news .title h1 {
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: var(--color-red);
+    font-weight: normal;
+    line-height: 8rem;
+    margin: 0;
+    padding: 0 0 2rem 0;
+}
+
+.news .news-s {
+    width: 85%;
+}
+
+.line {
+    width: 70%;
+    height: 2px;
+    background-color: rgb(244, 192, 98);
+}
+
+.news-atomic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.news-article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    margin: 1rem 0;
+    color: var(--color-font);
+}
+
+.news-article img{
+    width: 160px;
+    height: 160px;
+    padding-right: 1rem;
+    object-fit: cover;
+}
+
+
 @media only screen and (max-width: 1280px) {
     .hero .title h1 {
         font-size: 6rem;
@@ -71,6 +129,10 @@
     .hero .hero-img {
         max-width: 90%;
         transform: translateY(-1.5rem);
+    }
+
+    .news-article {
+        flex-direction: column;
     }
 }
 
