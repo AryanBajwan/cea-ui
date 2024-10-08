@@ -6,9 +6,14 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import './App.css'
+import { useEffect } from 'react';
 
 function AppContent() {
   const { theme } = useTheme();
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
   return (
     <div className={`app ${theme}`}>

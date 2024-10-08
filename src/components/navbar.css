@@ -25,11 +25,12 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .navigation .theme-toggle {
     padding-right: 1rem;
+    padding-left: 1rem;
     width: 60px;
     height: auto;
     cursor: pointer;
@@ -39,7 +40,7 @@ nav {
     color: #ffffff;
 }
 .app.light .theme-toggle {
-    color: rgb(249, 249, 90);
+    color: orange;
 }
 
 .theme-toggle svg {
@@ -99,6 +100,8 @@ nav {
 
 @media only screen and (max-width: 768px) {
     .navigation .theme-toggle {
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
         width: 45px;
         height: auto;
     }

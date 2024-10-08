@@ -1,0 +1,49 @@
+.news-btn button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-news-btn);
+    border-radius: 10px;
+    border-color: var(--color-news-btn);
+    padding: 0.75rem 2.35rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: none !important;
+    animation: news 2s ease-in-out infinite;
+}
+
+@keyframes news {
+    0% {
+        transform: scale(0.75) rotateZ(0deg);
+    }
+    20% {
+        transform: scale(1) rotateZ(0deg);
+    }
+    30% {
+        transform: scale(1) rotateZ(15deg);
+    }
+    40% {
+        transform: scale(1) rotateZ(-15deg);
+    }
+    50% {
+        transform: scale(1) rotateZ(15deg);
+    }
+    60% {
+        transform: scale(1) rotateZ(-15deg);
+    }
+    70% {
+        transform: scale(0.75) rotateZ(0deg);
+    }
+    100% {
+        transform: scale(0.75) rotateZ(0deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .news-btn button {
+        padding: 0.5rem 1.75rem;
+        font-size: 0.75rem;
+    }
+}

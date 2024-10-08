@@ -22,10 +22,16 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider = ({children}: ThemeProviderProps) => {
-    const [theme, setTheme] = useState<"light" | "dark">("dark");
+    const [theme, setTheme] = useState<"light" | "dark">(() => {
+        const localTheme = localStorage.getItem("theme");
+        return (localTheme === "light" || localTheme === "dark") ? localTheme : "dark";
+    });
 
     const toggleTheme = () => {
-        setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+        const newTheme = (theme == "light") ? "dark" : "light";
+        // setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+        setTheme(newTheme);
+        localStorage.setItem("theme", newTheme);
     };
 
     return (

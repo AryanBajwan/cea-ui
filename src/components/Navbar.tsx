@@ -2,6 +2,7 @@ import { useState } from 'react';
 import "@theme-toggles/react/css/Classic.css"
 import { Classic } from "@theme-toggles/react"
 import { useTheme } from '../ThemeContext';
+import NewsButton from '../utils/NewsButton';
 
 import ceaLogo from '../assets/CeaLogo.svg';
 import menuStart from '../assets/Navigation.svg'
@@ -31,6 +32,7 @@ function Navbar() {
                     <img src={ceaLogo} alt='cea logo' />
                 </div>
                 <div className="nav-menu">
+                    <NewsButton word="NEWS"/>
                     <div className="theme-toggle">
                         <Classic duration={750} toggled={theme === "dark"} toggle={toggleTheme}/>
                     </div>
