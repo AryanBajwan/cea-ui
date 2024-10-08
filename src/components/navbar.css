@@ -3,6 +3,7 @@ nav {
     height: 120px;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .navigation {
@@ -16,7 +17,7 @@ nav {
     padding-top: 1rem;
     margin: 0 2rem 0 2rem;
 }
-
+background-color: pink;
 .navigation .nav-logo {
     width: 90px;
     height: auto;
@@ -28,6 +29,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 80;
 }
 
 .navigation .theme-toggle {
@@ -55,7 +57,7 @@ nav {
     height: auto;
     cursor: pointer;
     position: relative;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .navigation .nav-menu .menu-list {
@@ -69,7 +71,7 @@ nav {
     opacity: 0;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0.3s;
     transform: translateX(100%);
-    z-index: 999;
+    z-index: 20;
 }
 
 .navigation .nav-menu .menu-list.active {

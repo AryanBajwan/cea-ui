@@ -12,6 +12,7 @@
     cursor: pointer;
     box-shadow: none !important;
     animation: news 2s ease-in-out infinite;
+    z-index: 30;
 }
 
 @keyframes news {
