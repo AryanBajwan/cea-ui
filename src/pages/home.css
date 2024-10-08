@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 70%;
+    max-width: 85%;
     max-height: 80vh;
     width: 100%;
     height: auto;
@@ -44,6 +44,7 @@
         transform: translateX(-6rem);
     }
     .hero .hero-img {
+        max-width: 85%;
         transform: translateY(-2.5rem);
     }
 }
@@ -55,7 +56,8 @@
         transform: translateX(-4rem);
     }
     .hero .hero-img {
-        transform: translateY(1.5rem);
+        max-width: 85%;
+        transform: translateY(-1.5rem);
     }
 }
 
@@ -66,7 +68,8 @@
         transform: translateX(-3rem);
     }
     .hero .hero-img {
-        transform: translateY(1.5rem);
+        max-width: 90%;
+        transform: translateY(-1.5rem);
     }
 }
 
@@ -77,6 +80,7 @@
         transform: translateX(-2rem);
     }
     .hero .hero-img {
-        transform: translateY(1.5rem);
+        max-width: 95%;
+        transform: translateY(-0.75rem);
     }
 }

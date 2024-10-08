@@ -1,0 +1,21 @@
+:root {
+    --color-background: #1B2224; 
+    --color-red: #E14E41;
+    --color-light-green: #9BBFB2;
+    --color-light-red: #FE8E81;
+    --color-light-blue: #637FAA;
+}
+
+.app.light {
+    --color-background: #c0d9e0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background-color: var(--color-background);
+    transition: background-color 0.3s ease;
+}
