@@ -1,3 +1,7 @@
+/*
+For Dark Mode: 
+ */
+
 :root {
     --color-background: #1B2224; 
     --color-red: #E14E41;
@@ -9,8 +13,11 @@
     --color-font: #ffffff;
 }
 
+/* 
+Light Mode:
+*/
 .app.light {
-    --color-background: #c0d9e0;
+    --color-background: rgb(231, 247, 255);
     --color-font: #000000;
 }
 

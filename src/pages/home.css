@@ -58,12 +58,11 @@
 
 .news .title h1 {
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: 4rem;
     color: var(--color-red);
     font-weight: normal;
-    line-height: 8rem;
     margin: 0;
-    padding: 0 0 2rem 0;
+    padding: 1rem 0;
 }
 
 .news .news-s {
@@ -131,7 +130,7 @@
 
     .hero .title h1 {
         font-size: 4rem;
-        line-height: 4rem;
+        line-height: normal;
         transform: translateX(0);
     }
 
@@ -145,12 +144,15 @@
     .hero img {
         object-fit: cover;
     }
+
+    .news .title h1 {
+        font-size: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .hero .title h1 {
         font-size: 3rem;
-        line-height: 3rem;
     }
 
     .news-article {
@@ -164,11 +166,22 @@
     .hero {
         margin-top: var(--hieght-sm-nav);
     }
+
+    .news .title h1 {
+        font-size: 2rem;
+    }
+
+    .news-article {
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 640px) {
     .hero .title h1 {
         font-size: 2rem;
-        line-height: 2rem;
+    }
+
+    .news .title h1 {
+        font-size: 1.5rem;
     }
 }
