@@ -34,7 +34,13 @@ function Navbar() {
                 <div className="nav-menu">
                     <NewsButton word="NEWS"/>
                     <div className="theme-toggle">
-                        <Classic duration={750} toggled={theme === "dark"} toggle={toggleTheme}/>
+                        <Classic 
+                        duration={750} 
+                        toggled={theme === "dark"} 
+                        toggle={toggleTheme}
+                        // Casting to any
+                        {...({} as any)} 
+                        />
                     </div>
                     <img src={navigation ? menuStop : menuStart} alt='cea logo' onClick={onClick} />
                         <ul className={navigation ? "menu-list active" : "menu-list"}>

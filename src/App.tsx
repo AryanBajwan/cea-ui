@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 import { ThemeProvider, useTheme } from './ThemeContext';
 
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 import './App.css'
 import { useEffect } from 'react';
