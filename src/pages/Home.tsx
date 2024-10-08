@@ -55,7 +55,7 @@ const News = () => {
             {newsData && newsData.map((news: NewsAtomic) => (
                 <React.Fragment key={news.id}>
                     <div className='news-article'>
-                        <img src={news.photo} alt={news.desc} />
+                        <img src={news.photo} alt="news" />
                         <p>{news.desc}</p>
                     </div>
                     <div className='line'></div>
