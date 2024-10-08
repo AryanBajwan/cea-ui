@@ -138,6 +138,10 @@
     .news-article {
         width: 95%;
     }
+
+    .line {
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 640px) {
