@@ -105,13 +105,18 @@ nav {
         width: 45px;
         height: auto;
     }
+
+    .navigation {
+        margin: 0 0.75rem 0 0.75rem;
+    }
 }
 
 @media only screen and (max-width: 640px) {
     .navigation .nav-logo img{
-        width: 70px;}
-    .navigation .nav-menu img{
         width: 50px;
+    }
+    .navigation .nav-menu img{
+        width: 40px;
     }
     .navigation .nav-menu .menu-list.active {
         width: 320px;
