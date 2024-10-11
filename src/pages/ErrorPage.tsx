@@ -15,7 +15,7 @@ const ErrorPage = () => {
 
   return (
     <div className="error-page">
-      <img src="/logo.png" alt="Error Logo" className="error-logo" />
+      <img src="/logo.svg" alt="Error Logo" className="error-logo" />
       <h1>Oops!</h1>
       <p>{errorMessage}</p>
       <p>Error Type: {errorType}</p>
